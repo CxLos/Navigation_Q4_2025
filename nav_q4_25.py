@@ -787,12 +787,14 @@ age_bar = px.bar(
     hovertemplate='<b>Month</b>: %{x}<br><b>Age Group</b>: %{fullData.name}<br><b>Count</b>: %{y}<extra></extra>'
 )
 
+available_age_groups = df_age_overall['Age_Group'].tolist()
+filtered_age_order = [age for age in age_order if age in available_age_groups]
+
 # Age Pie Chart - Overall Distribution
 age_pie = px.pie(
     df_age_overall,
     names='Age_Group',
     values='Count',
-    category_orders={'Age_Group': age_order}
 ).update_layout(
     title=dict(
         text=f'{current_quarter} Age Distribution Ratio',
