@@ -669,7 +669,7 @@ def random_date(start, end):
 
 # Define the date range for random dates
 start_date = datetime(1950, 1, 1)
-end_date = datetime(2000, 12, 31)
+end_date = datetime(2005, 12, 31)
 
 # Convert 'Individual's Date of Birth:' to datetime, coercing errors to NaT
 df['Individual\'s Date of Birth:'] = pd.to_datetime(df['Individual\'s Date of Birth:'], errors='coerce')
@@ -724,7 +724,16 @@ df_age_quarterly = pd.concat(age_data, ignore_index=True)
 df_age_overall = df['Age_Group'].value_counts().reset_index(name='Count')
 
 # Define age order for consistent display
-age_order = ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80+', 'N/A']
+age_order = [
+    '10-19', 
+    '20-29', 
+    '30-39', 
+    '40-49',
+    '50-59',
+    '60-69', 
+    '70-79',
+    '80+'
+    ]
 
 # Age Bar Chart - Quarterly Format
 age_bar = px.bar(
