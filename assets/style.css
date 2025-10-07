@@ -1,0 +1,634 @@
+
+/* =============== Body ================ */
+
+html, body {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(222, 222, 222);
+}
+
+/* =============== Header ================ */
+
+.divv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vh;
+
+  /* width: 90%; */
+  /* margin: 0px 0px 0px 0px; */
+    /* margin: 0px auto; */
+  padding: 10px 0px 0px 0px;
+
+  background-color:rgb(145, 100, 182);
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.title {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  color: rgb(217, 191, 24);
+  font-size: clamp(35px, 5.5vw, 55px);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title2 {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+   /* color: rgb(217, 191, 24); */
+  font-size: clamp(25px, 2vw, 35px);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  margin: 10px 15px 15px 15px;
+  padding: 2px 5px 2px 5px;
+  color:black;
+  background-color: rgb(197, 197, 197);
+  border: 2.3px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Calibri';
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.7; /* Set the opacity to 70% on hover */
+}
+
+.btn:active {
+  transform: translate(0, 3px); /* Move the button 10 pixels down on hover */
+}
+
+/* =================== Rollups =================== */
+
+.rollup-row {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* gap:0%; */
+  margin: 0 auto;
+  /* margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; */
+
+  width: 98%;
+  height: auto;
+  /* height: 25vh; */
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.rollup-box-tl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap:20px;
+  min-width: 0; 
+
+  /* margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; */
+
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+.rollup-box-tr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap:20px;
+  min-width: 0; 
+
+  /* margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; */
+
+  /* border-left: 2px solid rgb(0, 0, 0); */
+  /* border-bottom: 2px solid rgb(0, 0, 0); */
+}
+
+.rollup-box-bl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap:20px;
+  min-width: 0; 
+
+  /* margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; */
+
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+.rollup-box-br {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap:20px;
+  min-width: 0; 
+
+  /* margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; */
+
+  /* border-left: 2px solid rgb(0, 0, 0); */
+  /* border-bottom: 2px solid rgb(0, 0, 0); */
+}
+
+.title-box {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+  height: auto;
+  /* margin: 0px 0px 0px 0px;
+  padding: 20px 20px 0px 20px; */
+}
+
+.rollup-title {
+  display: flex; 
+  flex: 1; 
+  justify-content: center; 
+  align-items: center; 
+  align-self: center;
+  width: 100%; 
+  /* height: 20%; */
+  /* margin: 0 auto; */
+  margin: 25px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: clamp(24px, 4.5vw, 45px);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-size: 50px; */
+
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.rollup-number {
+  font-size: 70px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 2px 0px 0px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.rollup-number-2 {
+  font-size: clamp(24px, 4.5vw, 50px);
+  margin: 0px 0px 0px 0px;
+  padding: 0px 2px 0px 0px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.circle-box {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+    box-sizing: border-box;
+
+  /* width: 20%; */
+  /* height: 100%;  */
+  margin: 10px 0px 35px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.circle-1 {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 0px 0px 0px 0px;
+  padding: 22px 5px 22px 5px;
+
+  border: 15px solid rgb(240, 208, 0);
+  border-radius: 100px;
+  background-color: rgb(255, 239, 136);
+  width: 100%; /* Adjust width to ensure it fills the parent */
+  height: auto; /* Adjust height if needed */
+}
+
+.circle-2 {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 0px 0px 0px 0px;
+  padding: 22px 5px 22px 5px;
+
+  border: 15px solid rgb(240, 208, 0);
+  border-radius: 100px;
+  background-color: rgb(255, 239, 136);
+  width: 100%; /* Adjust width to ensure it fills the parent */
+  height: auto; /* Adjust height if needed */
+}
+
+.circle-3 {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 0px 0px 0px 0px;
+   padding: 22px 5px 22px 5px;
+
+  border: 15px solid rgb(240, 208, 0);
+  border-radius: 100px;
+  background-color: rgb(255, 239, 136);
+  width: 100%; /* Adjust width to ensure it fills the parent */
+  height: auto; /* Adjust height if needed */
+}
+
+.circle-4 {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 0px 0px 0px 0px;
+  padding: 0px 7px 0px 7px;
+
+  border: 15px solid rgb(240, 208, 0);
+  border-radius: 100px;
+  background-color: rgb(255, 239, 136);
+  width: 100%; /* Adjust width to ensure it fills the parent */
+  height: auto; /* Adjust height if needed */
+}
+
+/* ====================== Graphs ======================= */
+
+.graph-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  width: 100%;
+  height: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.visuals-text {
+  display: flex; 
+  flex: 1; 
+  justify-content: center; 
+  align-items: center; 
+  align-self: center;
+
+  font-size: clamp(24px, 4vw, 45px);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(38, 38, 38);
+
+  margin: 30px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; 
+}
+
+.graph-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+
+  width: 98%;
+  height: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.graph-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 47%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.graph {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 15px 0px 10px;
+  width: 100%;
+  height: 60vh;
+
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  overflow: hidden;
+
+  background-color: white;
+}
+
+.wide-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 95%;
+  /* height: auto; */
+  height: 80vh;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.wide-graph {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 15px 0px 10px;
+  width: 100%;
+  /* height: 85vh; */
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  overflow: hidden;
+
+  background-color: white;
+}
+
+.zip-graph {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 15px 0px 10px;
+  width: 95%;
+  height: 100%;
+
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  overflow: hidden;
+
+  background-color: white;
+}
+
+/* ================ Folium ================ */
+
+.folium-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+
+  width: 97%;
+  height: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.folium-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
+}
+
+.folium {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 90%;
+  height: 800px;
+  margin: 10px 0px 30px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.zip {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
+
+/* ================ Data Table ================ */
+
+.data-row {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  flex-grow: 1;
+
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: auto;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.data-box {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:3vh;
+
+  margin: 1.5% 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: auto;
+  /* border-left: 2px solid rgb(0, 0, 0); */
+}
+
+.data-title {
+  font-size: clamp(24px, 4vw, 45px);
+  text-align: center;
+  color: rgb(38, 38, 38);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 5px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#applications-table {
+  box-sizing: border-box; 
+  margin: 0px 0px 0px 0px; /* Adjust the margin as needed */
+  padding: 0px 0px 20px 0px; /* Reduced padding for tighter border */
+  width: 90%;
+  /* height: 56vh; */
+  height: auto;
+  overflow-x: auto; 
+  /* white-space: nowrap; */
+  /* visibility:collapse; */
+}
+
+/* .scrollable-container {
+  overflow-x: auto; 
+  white-space: nowrap; 
+} */
+
+/* ================ Media Screen ================ */
+
+@media (max-width: 900px) {
+
+  .graph-container {
+    gap: 2vh;
+  }
+  .graph-row,
+  .rollup-row,
+  .data-box {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 20px; /* vertical gap between stacked items */
+    border: none;
+  }
+  .graph{
+    height: 40vh;
+  }
+  .graph-box,
+  .wide-box,
+  .databox,
+  .rollup-box-tl,
+  .rollup-box-tr,
+  .rollup-box-bl,
+  .rollup-box-br {
+    width: 93%;
+    margin: 0 auto;
+    min-width: 0;
+    border: none;
+    border-right: none;
+    border-left: none;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  .rollup-box-br{
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  .wide-box{
+    flex-direction: column;
+    width: 100%;
+    height: 45vh;
+    width: 85%;
+  }
+   #applications-table {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .rating_title_text {
+    font-size: 12px;
+  }
+  /* axis tick labels */
+  .js-plotly-plot .xtick text,
+  .js-plotly-plot .ytick text {
+    font-size: 10px !important;
+    line-height: 1 !important;
+  }
+
+  /* axis titles (x / y) and subplot titles */
+  .js-plotly-plot .xaxis .title,
+  .js-plotly-plot .yaxis .title,
+  .js-plotly-plot .xytitle,
+  .js-plotly-plot .gtitle {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  /* trace labels produced by texttemplate / textinfo and trace-layer text */
+  .js-plotly-plot .infolayer text,
+  .js-plotly-plot .textpoint text,
+  .js-plotly-plot .scatterlayer text,
+  .js-plotly-plot .barlayer text,
+  .js-plotly-plot text[class*="infolayer"] {
+    font-size: 14px !important;
+  }
+
+.js-plotly-plot .trace.pie text,
+.js-plotly-plot .pie .textlayer text {
+  display: none !important;
+}
+
+  .js-plotly-plot g.slice text,
+  .js-plotly-plot .pie .textlayer text,
+  .js-plotly-plot .pie .infolayer text,
+  .js-plotly-plot .trace.pie text,
+  .js-plotly-plot .textpoint text {
+    font-size: 10px !important;
+    line-height: 1 !important;
+  }
+
+  /* legend text for pies */
+  .js-plotly-plot .legendtext {
+    font-size: 10px !important;
+  }
+
+  /* hide connector/leader lines if you want them gone */
+  .js-plotly-plot path.connector,
+  .js-plotly-plot polyline.leader,
+  .js-plotly-plot .trace.pie .lines path {
+    display: none !important;
+    stroke: none !important;
+    opacity: 0 !important;
+  }
+
+  /* .js-plotly-plot .textlayer text,
+  .js-plotly-plot .infolayer text,
+  .js-plotly-plot .textpoint text {
+    font-size: 10px !important;
+    line-height: 1 !important;
+  } */
+
+  /* .js-plotly-plot .pie .textlayer text,
+  .js-plotly-plot .pie .infolayer text,
+  .js-plotly-plot .pie .slice text,
+  .js-plotly-plot .pie .textpoint text,
+  .js-plotly-plot .pie .lines,
+  .js-plotly-plot .pie .connector,
+  .js-plotly-plot .pie .pull,
+  .js-plotly-plot .pie .lines path,
+  .js-plotly-plot .pie .connector path,
+  .js-plotly-plot .pie .pull path {
+    font-size: 10px !important;
+    display: none !important;
+    stroke: none !important;
+    opacity: 0 !important;
+  } */
+
+  /* annotations, hover labels, and legend text */
+  .js-plotly-plot .annotation text,
+  .js-plotly-plot .hovertext,
+  .js-plotly-plot .legendtext,
+  .js-plotly-plot .legend .traces text {
+    font-size: 10px !important;
+  }
+}
