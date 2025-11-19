@@ -144,9 +144,9 @@ df.rename(
         "Location Encountered:" : "Location",
         "Individual's Insurance Status:" : "Insurance",
         "Individual's Status:" : "Status",
-        "Type of support given:" : "Support",
+        "Type of Support Given:" : "Support",
         "Gender:" : "Gender",
-        "Race/Ethnicity:" : "Ethnicity",
+        "Race / Ethnicity:" : "Ethnicity",
         "Provide brief support description:" : "Description",
         # "" : "",
     }, 
@@ -663,13 +663,6 @@ def random_date(start, end):
 
 start_date = datetime(1950, 1, 1) # Example: start date, e.g., 1950-01-01
 end_date = datetime(2000, 12, 31)
-
-def random_date(start, end):
-    return start + timedelta(days=np.random.randint(0, (end - start).days))
-
-# Define the date range for random dates
-start_date = datetime(1950, 1, 1)
-end_date = datetime(2005, 12, 31)
 
 # Convert 'Individual's Date of Birth:' to datetime, coercing errors to NaT
 df['Individual\'s Date of Birth:'] = pd.to_datetime(df['Individual\'s Date of Birth:'], errors='coerce')
